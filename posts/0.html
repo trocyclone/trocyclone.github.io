@@ -1,0 +1,332 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>单细胞基因组测序流程 | 林中小屋</title><meta name="author" content="胡杨林,gocuttlefish@163.com"><meta name="copyright" content="胡杨林"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="单细胞基因组测序流程  1.单细胞的获取 引入话术 为了对单个细胞进行测序，必须首先对其进行捕获。虽然从丰富种群中分离单细胞的方法已经成熟，但稀有单细胞 (&lt;1%) 的分离仍然是一项艰巨的技术挑战。为了从丰富的种群中随机分离单个细胞，可以采用几种方法:显微操作技术、连续稀释法、流式细胞分选法 (FACS) 、微流控芯片平台操作法和激光捕获显微切割技术（LCM）   单细胞的分离与捕获 显微操">
+<meta property="og:type" content="article">
+<meta property="og:title" content="单细胞基因组测序流程">
+<meta property="og:url" content="https://trocyclone.github.io/posts/0.html">
+<meta property="og:site_name" content="林中小屋">
+<meta property="og:description" content="单细胞基因组测序流程  1.单细胞的获取 引入话术 为了对单个细胞进行测序，必须首先对其进行捕获。虽然从丰富种群中分离单细胞的方法已经成熟，但稀有单细胞 (&lt;1%) 的分离仍然是一项艰巨的技术挑战。为了从丰富的种群中随机分离单个细胞，可以采用几种方法:显微操作技术、连续稀释法、流式细胞分选法 (FACS) 、微流控芯片平台操作法和激光捕获显微切割技术（LCM）   单细胞的分离与捕获 显微操">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://z1.ax1x.com/2023/10/15/pi9jlJs.jpg">
+<meta property="article:published_time" content="2023-10-14T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-10-15T15:12:44.557Z">
+<meta property="article:author" content="胡杨林">
+<meta property="article:tag" content="基因组测序，生物技术">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://z1.ax1x.com/2023/10/15/pi9jlJs.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://trocyclone.github.io/posts/0.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '单细胞基因组测序流程',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-10-15 23:12:44'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.1.6/lib/clock.min.css" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="林中小屋" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://z1.ax1x.com/2023/10/15/pi9jlJs.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="林中小屋"><span class="site-name">林中小屋</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">单细胞基因组测序流程</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-14T16:00:00.000Z" title="发表于 2023-10-15 00:00:00">2023-10-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-15T15:12:44.557Z" title="更新于 2023-10-15 23:12:44">2023-10-15</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="单细胞基因组测序流程"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>单细胞基因组测序流程</p>
+<ol>
+<li>1.单细胞的获取<ol>
+<li>引入话术<ol>
+<li>为了对单个细胞进行测序，必须首先对其进行捕获。虽然从丰富种群中分离单细胞的方法已经成熟，但稀有单细胞 (&lt;1%) 的分离仍然是一项艰巨的技术挑战。为了从丰富的种群中随机分离单个细胞，可以采用几种方法:显微操作技术、连续稀释法、流式细胞分选法 (FACS) 、微流控芯片平台操作法和激光捕获显微切割技术（LCM）</li>
+</ol>
+</li>
+<li>单细胞的分离与捕获<ol>
+<li>显微操作技术<ol>
+<li>显微操作技术是利用显微镜直接进行单细胞的分离，是一种较常用的灵活获取单细胞的技术。显微操作系统以倒置显微镜为主，其关键技术要点在于对培养的细胞进行梯度稀释，如果细胞浓度过高会影响分离和挑取单细胞的准确性。<ol>
+<li>优缺点<ol>
+<li>操作容易进行、可以直接通过可见视野直观地分离单细胞、成本低、主要是用于较小细胞群体的目标细胞的分离。</li>
+<li>通量低、分离过程可能会损伤细胞、而且细胞识别出错率高。</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>连续稀释法<ol>
+<li>梯度稀释法是通过将细胞进行梯度稀释，最终得到单细胞的一种简易方法。<ol>
+<li>优点<ol>
+<li>技术简单、成本低，对于可以进行培养的样本研究均可用该方法得到单细胞</li>
+</ol>
+</li>
+<li>缺点<ol>
+<li>在细胞稀释过程中容易出现分离错误或者丢失。</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>流式细胞分选法（ FACS）<ol>
+<li>荧光激活细胞分选（FACS）技术借助流式细胞仪，单个细胞有序地通过激光束，利用激光激发荧光素标记的细胞，根据激发的荧光信号对细胞进行高度特异性分选，含有靶细胞的液滴被选择性地偏转到收集器中，是比较常用的单细胞分离技术。<ol>
+<li>优缺点<ol>
+<li>FACS系统是在单细胞基础上分离靶细胞，具有更高的分选准确度。虽然非常有效和准确，但复杂的分拣机制使得FACS系统显得昂贵且笨重，并且潜在的气溶胶也有一定的危险性。此外仪器中快速流动的液体可能会对细胞的活性和形态状态产生一定的影响，但是对于基因组DNA的研究没有影响。</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>微流控芯片平台操作法<ol>
+<li>微流控技术是使用具有专用微流体芯片进行平行单细胞分离，捕获单细胞。微流体装置具有集成的细胞分选器，用于分离选定的单个细胞，从而允许灵活的样品选择且封闭的操作空间可以有效地避免污染。<ol>
+<li>优缺点</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>激光捕获显微切割技术(LCM)<ol>
+<li>使用激光从放置在显微镜玻片上的固体组织样本中分离出目标细胞。<ol>
+<li>优缺点</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>各技术图示</li>
+</ol>
+</li>
+</ol>
+<p><img src="/%E5%8D%95%E7%BB%86%E8%83%9E%E5%9F%BA%E5%9B%A0%E7%BB%84%E6%B5%8B%E5%BA%8F%E6%B5%81%E7%A8%8B.001.png"></p>
+<ol>
+<li>各技术间的优缺点</li>
+</ol>
+<p><img src="/%E5%8D%95%E7%BB%86%E8%83%9E%E5%9F%BA%E5%9B%A0%E7%BB%84%E6%B5%8B%E5%BA%8F%E6%B5%81%E7%A8%8B.002.jpeg"></p>
+<ol>
+<li>2.单细胞全基因组扩增(Whole genome amplification,WGA)<ol>
+<li>引入话术<ol>
+<li>单细胞中的 DNA 和 RNA 的含量非常小，一个普通人类细胞中仅含有约 6.6pg DNA、10pgRNA，因此直接将其用于测序仪上是无法被检测到的。所以在测序前，必须首先对这些单细胞进行扩增，同时尽量减少错误，这就引入了全基因组扩增技术（Whole GenomeAmplification）。</li>
+</ol>
+</li>
+<li>技术类型<ol>
+<li>传统全基因组扩增技术<ol>
+<li><p>简并寡核苷酸引物 PCR 扩增（Degenerate oligonucleotide primer - polymerase chain reaction, DOP-PCR）</p>
+<ol>
+<li>DOP-PCR 扩增技术利用引物的 3’端含有随机的引物序列，将引物随机结合在单细胞基因组上，接下来通过 PCR 技术实现全基因组的随机扩增。在 PCR 扩增环节中，最初的扩增是随机结合的，碱基偏好性将导致部分区域的指数扩增，最终导致不同区域测序结果的较大差异，扩增产物在全基因组上的覆盖度较低。</li>
+</ol>
+</li>
+<li><p>多重置换扩增（Multipedisplacement amplification, MDA）</p>
+<ol>
+<li>MDA 技术是一种等温扩增技术，并不基于 PCR 扩增反应。其反应在 30 摄氏度左右的恒温下进行，随机的六位碱基引物在多个位点与模板 DNA 退火，接下来在 phi29 酶的指导下从这些位点同时开始延伸复制，新和成的 DNA 序列取代模板链的互补链，成为新的扩增模板，重复扩增过程，形成超分支簇结构。<ol>
+<li>优缺点<ol>
+<li>这一技术的优势在于，DNA 的线性扩增能够降低扩增错误率，能覆盖 99%的基因组区域，然而由于引物的 GC 含量和 DNA 聚合酶的偏好性等，存在等位基因丢失和扩增不均一的缺点。</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>基于多次退火和成环的扩增循环（Multiple annealing and looping-based amplification cycles, MALBAC）</p>
+<ol>
+<li>MALBAC 扩增技术是一种复合型 WGA 技术，通过拟线性循环扩增，降低了扩增偏好性。与 DOP-PCR 技术不同，MALBAC 使用的扩增引物 3’端为随机序列，5’为共同序列，和模板低温结合后，进行近似线性扩增后再进行环状 PCR 扩增，避免了多次扩增导致的错误累积。<ol>
+<li>优缺点<ol>
+<li>这一方法兼顾了单细胞基因组的覆盖度和扩增均一性，但由于扩增区域的序列偏好性，也存在一定的系统误差，且扩增效率较低。</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>其他<ol>
+<li>LIANTI 扩增技术、乳液全基因组扩增（emulsionwhole-genomeamplification，eWGA）、SISSOR（single-strandedsequencingusingmicrofluidicreactors）是利用微流体反应器进行单链测序等</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>扩增技术面对的挑战<ol>
+<li>要实现从一个细胞样本测出全基因组的 DNA 序列，至少要克服以下三个难题：<ol>
+<li>首先是如何实现均匀扩增。若使用传统的随机引物 PCR 方法进行扩增，不同扩增片段的扩增效率会存在差异，这些差异会随着扩增循环数的增加，呈现出指数放大的效果。导致扩增结果严重覆盖不均一，极少数区域的 DNA 被大量扩增，但大多数区段覆盖较低。在测序得到的结果中，无法有效地判断低扩增效率区段的基因序列情况。</li>
+<li>第二个难题是全基因组覆盖问题。常规的批量 DNA 测序在建库时，每一步操作中都会带来 DNA 片段的损失，导致初始 DNA 中很大一部分被浪费，没有形成有效的文库分子。在单细胞测序中，要求几乎所有的原始基因组片段都得到扩增，所以丢失大部分的起始 DNA 是不可接受的。这就要求几乎所有的 DNA 片段都被覆盖到，实现有效扩增。</li>
+<li>第三个难题是需要实现较高的扩增效率。在测序过程中，只有不到万分之一的文库分子会被测序到，所以单细胞基因组扩增的方法需要有较高的扩增效率。至少要有上万倍到几十万倍的扩增效率，才能保证在全基因组测序的时侯，大部分的片段都被测序测到。</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>技术原理图示</li>
+</ol>
+</li>
+</ol>
+<p><img src="/%E5%8D%95%E7%BB%86%E8%83%9E%E5%9F%BA%E5%9B%A0%E7%BB%84%E6%B5%8B%E5%BA%8F%E6%B5%81%E7%A8%8B.003.png"></p>
+<ol>
+<li>各技术优缺点</li>
+</ol>
+<p><img src="/%E5%8D%95%E7%BB%86%E8%83%9E%E5%9F%BA%E5%9B%A0%E7%BB%84%E6%B5%8B%E5%BA%8F%E6%B5%81%E7%A8%8B.004.png"></p>
+<ol>
+<li>3.扩增产物测序及分析<ol>
+<li>①测序文库的构建<ol>
+<li>为了对扩增的DNA进行测序，首先需要将其制成一个测序文库。测序文库是来自一个细胞群的单链DNA片段的集合，或者在单细胞测序的情况下，来自一个特定的细胞。</li>
+<li>常规DNA文库构建方案，包括机械打断法、转座酶切法、扩增子建库以及片段化酶切法等构建好的文库需进行文库浓度和峰型检测，质检合格后，即可进行测序。</li>
+</ol>
+</li>
+<li>②高通量测序及数据分析<ol>
+<li>目前最常用的测序平台是Illumina平台，除此之外，还有Ion Torrent平台和MGI平台。选择不同的测序平台，需搭配相应的文库构建试剂盒。测序数据量可根据具体实验需求而定。</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p><img src="/%E5%8D%95%E7%BB%86%E8%83%9E%E5%9F%BA%E5%9B%A0%E7%BB%84%E6%B5%8B%E5%BA%8F%E6%B5%81%E7%A8%8B.005.png"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://trocyclone.github.io">胡杨林</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://trocyclone.github.io/posts/0.html">https://trocyclone.github.io/posts/0.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://trocyclone.github.io" target="_blank">林中小屋</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%9F%BA%E5%9B%A0%E7%BB%84%E6%B5%8B%E5%BA%8F%EF%BC%8C%E7%94%9F%E7%89%A9%E6%8A%80%E6%9C%AF/">基因组测序，生物技术</a></div><div class="post_share"><div class="social-share" data-image="https://z1.ax1x.com/2023/10/15/pi9jlJs.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/16107.html" title="Hello World"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hello World</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://z1.ax1x.com/2023/10/15/pi9jlJs.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">胡杨林</div><div class="author-info__description">经验如过往的箭矢，于今时助你一臂之力</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的博客(*￣▽￣*)ブ</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/0.html" title="单细胞基因组测序流程">单细胞基因组测序流程</a><time datetime="2023-10-14T16:00:00.000Z" title="发表于 2023-10-15 00:00:00">2023-10-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/16107.html" title="Hello World">Hello World</a><time datetime="2023-10-14T11:58:21.000Z" title="发表于 2023-10-14 19:58:21">2023-10-14</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 胡杨林</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="8152976493" data-server="netease" data-type="playlist"   data-order="list" data-fixed="true" data-preload="auto" data-autoplay="false" data-mutex="true" ></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_clock_anzhiyu_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.1.6/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock_anzhiyu')
+    if(parent_div_git) {
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var qweather_key = 'eb18852aaf4944fcb2f0f319684066c7';
+  var gaud_map_key = '5032421244686b14060be9206e690ad8';
+  var baidu_ak_key = 'undefined';
+  var flag = 0;
+  var clock_rectangle = '113.379723，23.047897';
+  var clock_default_rectangle_enable = 'true';
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.1.6/lib/clock.min.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
