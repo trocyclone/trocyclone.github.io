@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
-  
-  
+  <title>林中小屋</title>
+  <icon>https://www.gravatar.com/avatar/a0e44bf91567f164bdd27d2d9643b766</icon>
+  <subtitle>好耶好耶ヽ(✿ﾟ▽ﾟ)ノ</subtitle>
   <link href="https://trocyclone.github.io/atom.xml" rel="self"/>
   
   <link href="https://trocyclone.github.io/"/>
-  <updated>2023-10-14T12:19:36.000Z</updated>
+  <updated>2023-10-15T07:37:50.122Z</updated>
   <id>https://trocyclone.github.io/</id>
   
   <author>
-    <name>John Doe</name>
-    
+    <name>胡杨林</name>
+    <email>gocuttlefish@163.com</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
@@ -21,7 +21,7 @@
     <link href="https://trocyclone.github.io/2023/10/14/%E5%B0%8F%E6%B5%8B%E8%AF%95/"/>
     <id>https://trocyclone.github.io/2023/10/14/%E5%B0%8F%E6%B5%8B%E8%AF%95/</id>
     <published>2023-10-14T13:57:50.412Z</published>
-    <updated>2023-10-14T12:19:36.000Z</updated>
+    <updated>2023-10-15T07:37:50.122Z</updated>
     
     <content type="html"><![CDATA[<p>小测试</p><p>1.Foodiesfeed网站（内含超高清食物图片）</p><p><code>   </code>url：<a href="https://www.foodiesfeed.com/">https://www.foodiesfeed.com/</a></p><p>2.Icons8网站（内含图标）</p><p><code>   </code>url：<a href="https://icons8.com/">https://icons8.com/</a></p><p>3.hippopx（免版权图库）</p><p><code>   </code>url：<a href="https://www.hippopx.com/zh">https://www.hippopx.com/zh</a></p><p>4.Pexels（高清图库）</p><p><code>   </code>url：<a href="https://www.pexels.com/zh-cn/">https://www.pexels.com/zh-cn/</a></p><p>5.Wallpapershome（内含富有科技感图片）</p><p><code>   </code>url：<a href="https://wallpapershome.com/wallpapers/">https://wallpapershome.com/wallpapers/</a></p><p>6.Splitshire</p><p><code>   </code>url：<a href="https://www.splitshire.com/">https://www.splitshire.com/</a></p><p>7.Gratisography（怪诞风格）</p><p><code>   </code>url：<a href="https://gratisography.com/">https://gratisography.com/</a></p><p>8.Unsplash（质量较好、数量较多的图片网站）</p><p><code>   </code>url：<a href="https://unsplash.com/">https://unsplash.com/</a></p><p>9.Blush（icon图标，插画设计）</p><p><code>   </code>url：<a href="https://blush.design/zh-CN">https://blush.design/zh-CN</a></p><p>10.Iconfont（Icon图标,矢量图库）</p><p><code>   </code>url：<a href="https://www.iconfont.cn/">https://www.iconfont.cn</a></p><p>11.抠图网站</p><p><code>   </code>url：<a href="https://www.remove.bg/zh/upload">https://www.remove.bg/zh/upload</a></p><p>12.字由（字体）</p><p><code>   </code>url：<a href="https://www.hellofont.cn/">https://www.hellofont.cn/</a></p><p>13.配色（）</p><p><code>   </code>url：<a href="https://webgradients.com/">https://webgradients.com/</a></p><p>\14.</p>]]></content>
     
@@ -43,7 +43,7 @@
     <link href="https://trocyclone.github.io/2023/10/14/Hello-World-0/"/>
     <id>https://trocyclone.github.io/2023/10/14/Hello-World-0/</id>
     <published>2023-10-14T11:58:21.000Z</published>
-    <updated>2023-10-14T11:58:21.522Z</updated>
+    <updated>2023-10-15T07:37:40.860Z</updated>
     
     
     
