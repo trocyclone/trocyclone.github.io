@@ -6,7 +6,7 @@
   <link href="https://trocyclone.github.io/atom.xml" rel="self"/>
   
   <link href="https://trocyclone.github.io/"/>
-  <updated>2023-10-19T15:22:48.050Z</updated>
+  <updated>2023-10-21T03:15:05.543Z</updated>
   <id>https://trocyclone.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://trocyclone.github.io/posts/17000.html"/>
     <id>https://trocyclone.github.io/posts/17000.html</id>
     <published>2023-10-18T16:00:00.000Z</published>
-    <updated>2023-10-19T15:22:48.050Z</updated>
+    <updated>2023-10-21T03:15:05.543Z</updated>
     
     <content type="html"><![CDATA[<h1 id="博客更新日志"><a href="#博客更新日志" class="headerlink" title="博客更新日志"></a>博客更新日志</h1><hr><ul><li><h2 id="1-0-版本"><a href="#1-0-版本" class="headerlink" title="1.0 版本"></a>1.0 版本</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">* 博客网站基本架构完成</span><br><span class="line">* 功能上：</span><br><span class="line">  基本实现博客文章发布；</span><br><span class="line">* 装饰上：</span><br><span class="line">  增添二次元桌宠；</span><br><span class="line">  增添音乐播放器；</span><br><span class="line">  增添侧边时钟模块；</span><br><span class="line">  设置博客网站一图流形式；</span><br></pre></td></tr></table></figure></li></ul>]]></content>
     
